@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+        }
+        .bgimg1 {
+            background-image: url(img/img_parallax.jpg);
+            height: 100vh;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            opacity: 5px;
+        }
+        .bgimg2 {
+            background: url(img/img_parallax2.jpg);
+            height: 100vh;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            opacity: 5px;
+        }
+        .caption{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+        .border {
+            padding: 15px;
+            font-weight: bold;
+            background-color: #fff;
+        }
+        p {
+            display: flex;
+            background-color: #000;
+            height: 100px;
+            color: #fff;
+            margin: 0;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bgimg1">
+        <div class="caption">
+            <span class="border">прокрути вниз</span>
+        </div>
+    </div>
+    <div>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est necessitatibus minus nulla vero placeat fugit,
+            repellat numquam repellendus neque nostrum, rerum tenetur aliquid! Amet, facilis ullam molestias animi ut
+            unde!</p>
+    </div>
+    <div class="bgimg2">
+        <div class="caption">
+            <span class="border">прокрути вверх</span>
+        </div>
+    </div>
+</body>
+
+</html>
