@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+        body {
+            margin: 0;
+            background: url(./img/bag1.webp) no-repeat fixed;]
+        }
+        .img {
+            margin-top: 100px;
+            height: 45%;
+    width: 100%;
+    position: relative;
+        }
+        .img_left {
+            animation: left 1s linear;
+            height: 100%;
+    width: 25%;
+    background-image: url(./img/kn_1.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-y: left;
+    position: absolute;
+    left: 10%;
+        }
+        .img_right {
+            animation: right 1s linear;
+            height: 100%;
+    width: 25%;
+    background-image: url(./img/kn_2.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: right;
+    position: absolute;
+    right: 10%;
+        }
+        .main {
+            background-color: #333;
+            height: 100vh;
+        }
+        .title {
+            padding: 20px;
+            font-size: 100px;
+            color: #fff;
+        }
+        .btn {
+            margin-top: 50px;
+    font-size: 30px;
+    border: 5px solid #fff;
+    color: #fff;
+    padding: .25em;
+    margin-bottom: 1em;
+    cursor: pointer;
+text-align: center;
+        }
+        .main_desc {
+            padding: 100px;
+            font-size: 25px;
+            background-color: #fff;
+        }
+        .main_card {
+            margin: 100px 400px;
+            background-color: #fff;
+        }
+        .author_card {
+            padding: 25px;
+        }
+        .title_author {
+            color: rgb(19, 11, 95);
+            font-size: 45px;
+        }
+        .desc_author {
+            color: rgb(23, 73, 88);
+            padding: 10px;
+            font-size: 25px;
+            margin-left: 10px;
+        }
+        @keyframes right {
+            0% {
+                opacity: 0;
+                right: -400px;
+            }
+            100% {
+                opacity: 1;
+                right: 10%;
+            }
+        }
+        @keyframes left {
+            0% {
+                opacity: 0;
+                left: -400px;
+            }
+            100% {
+                opacity: 1;
+                right: 10%;
+            }
+        }
+    </style>
+    </head>
+    <body>
+        <div class="main">
+            <div class="title">LITTLE KINGDOM</div>
+            <div class="img">
+                <div class="img_right"></div>
+                <div class="img_left"></div>
+            </div>
+            <div class="btn">DOWNLOAD</div>
+        </div>
+        <div class="main_desc">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod
+            adipisci maiores, natus tempore voluptatum animi mollitia illo,
+            dolorem quisquam ab dolor earum magni veritatis reprehenderit saepe?
+            Voluptatem neque eligendi amet?
+        </div>
+        <div class="main_card">
+        <div class="author_card">
+            <div class="title_author">Author</div>
+            <div class="desc_author">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, distinctio sapiente. Eaque, optio earum? Libero, eveniet animi voluptate ea, deserunt veritatis dolor consequuntur error distinctio impedit mollitia beatae illum nobis.</div>
+        </div>
+    </div>
+    </body>
+</html>
